@@ -1,24 +1,14 @@
-a_file = open("inputday2.txt", "r")
-testMain = [(line.strip()).split() for line in a_file]
-a_file.close()
-toataly = 0
-totalx = 0
-#testMain.sort()
+testMain = [(line.strip()).split() for line in open("inputday2.txt", "r")]
+depth = 0
+aim = 0
+xmovment = 0
 for x in testMain:
     if "down" in x:
-        y = x[1]
-        z = int(y)
-        toataly = toataly + z
+        aim = aim + int(x[1])
     if "forward" in x:
-        a = x[1]
-        b = int(a)
-        toataly = toataly * b
-        totalx = totalx + b
+        xmovment = xmovment + int(x[1])
+        depth = depth + (int(x[1]) * aim)
     if "up" in x:
-        c = x[1]
-        d = int(c)
-        toataly = toataly - d
-print(totalx)
-print(toataly)
-overall = totalx * toataly
+        aim = aim - int(x[1])
+overall = xmovment * depth
 print(overall)
