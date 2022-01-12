@@ -20,7 +20,7 @@ while x < len(testMain) + 1:
             gammaRate.append(0)
         NumberHold = 0
         x = 0
-        if placement > 10:
+        if placement > len(testMain) - 2:
             print(gammaRate)
             x= 15
         placement = placement + 1
