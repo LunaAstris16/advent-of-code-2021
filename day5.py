@@ -1,5 +1,5 @@
 testmain = str(open('testinputday4', 'r').read()).splitlines()
-cordinates = [[0 for _ in range(10)] for _ in range(10)]
+cordinates = [[0 for _ in range(1000)] for _ in range(1000)]
 for t in range(len(testmain)):
     currentVaule = testmain[t].split('->')
     xvalueStart = int(currentVaule[0].split(',')[0])
