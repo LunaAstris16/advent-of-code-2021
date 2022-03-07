@@ -1,0 +1,23 @@
+1 - 2 letters that we know are in one of 2 spots
+    [use something like the letter 5 to test it and then you can test to see which one is wich]
+after this process then you have 2 set in stone patterns
+
+use the letter 6 9 0 for the next 2 bars
+    6 and 9 are the exact same except for 1 bar. when compared to 0 you will have 2 different bars that 
+    you get 1 is in the e position and the other is in the d position
+    
+    look at the number 3 this gives us a lot of information. this tells us which one one of the bars 
+    in the previous logic is the d bar and also gives us the e bar
+
+    the number 3 also gives us 2 different bars a and g if we look at the number 7 it tells us which
+    bar the a bar is and the g bar because its the one that the a bar is not
+
+list of the bars we have and the steps:
+first -> get c and f from the letter one this highlights a pair of bars
+secound -> look at the letter 3 compare it to the c and f bars you get the a d and g 
+third -> look at the digits with 6 in them and and find the 2 bars that 1 does not have but the others do 
+            this gives you d e and c
+**This is where you get the first confirmed bar**
+forth -> compare the d c and e from step 3 to the a d and g in step 2 and the 2 matching ones are d 
+
+
